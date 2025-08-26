@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SemenovaLiza Portfolio</title>
+    <script src="code/libs/gsap/gsap.min.js" defer></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="code/frontend/css/main.css">
+    <script src="code/frontend/js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="left-links">
+            <a id="download-resume" href="code/frontend/Elizaveta Semenova, Software Developer.pdf" download="">Download<br>Resume</a>
+            <a id="view-resume" href="code/frontend/Elizaveta Semenova, Software Developer.pdf" download="">View<br>Resume</a>
+        </div>
+        <div class="right-links">
+            <a id="github-link" href="https://github.com/SemenovaLiza" target="_blank">GitHub</a>
+            <a href="." target="_blank">LinkedIn</a>
+        </div>
+    </header>
+    <main>
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="slide__content">
+                        <h1>Who I Am?</h1>
+                        <p>Elizaveta Semenova</p>
+                        <div class="desc" id="self-desc">
+                            <p>A self-taught and trained backend developer specializing in Python. I possess skills in various areas, with a focus on chatbots and web development. Additionally, I'm developing an expertise in machine learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="slide__content">
+                        <div class="slide__content_header">
+                            <h1>Silver Screen - streaming platform</h1>
+                            <p>Python, FastAPI, Redis, Elasticsearch, docker compose</p>
+                        </div>
+                        <div class="slide__content_media">
+                            <img src="code/static/media/silver_screen/SS_swagger_speed.mp4" alt="Silver Screen gif" id="silver-screen-gif">
+                        </div>
+                        <div class="slide__content_buttons">
+                            <button class="slide-button"><a href="https://github.com/SemenovaLiza/link_cutter" target="_blank">GitHub</a></button>
+                            <button class="slide-button openModal" data-modal="ss-modal">Description</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="slide__content">
+                        <div class="slide__content_header">
+                            <h1>Foodio - recipes sharing platform</h1>
+                            <p>DRF, Djoser, PostgreSQL, Docker, React</p>
+                        </div>
+                        <div class="slide__content_media">
+                            <img src="code/static/media/foodio/rec-comp-speed.mp4" alt="Foodio gif" id="recipes-website-gif">
+                        </div>
+                        <div class="slide__content_buttons">
+                            <button class="slide-button"><a href="https://github.com/SemenovaLiza/link_cutter" target="_blank">GitHub</a></button>
+                            <button class="slide-button openModal" data-modal="foodio-modal">Description</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="slide__content">
+                        <div class="slide__content_header">
+                            <h1>Link Cutter - URL shortener platform</h1>
+                            <p>Python, Flask</p>
+                        </div>
+                        <div class="slide__content_media">
+                            <img src="code/static/media/link_cutter/link_cutter_speed.mp4" alt="Link Cutter gif" id="link-cutter-gif">
+                        </div>
+                        <div class="slide__content_buttons">
+                            <button class="slide-button"><a href="https://github.com/SemenovaLiza/link_cutter" target="_blank">GitHub</a></button>
+                            <button class="slide-button openModal" data-modal="lc-modal">Description</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="slide__content">
+                        <div class="slide__content_header">
+                            <h1>Networking Bot - in process</h1>
+                            <p>Aiogram, SQLAlchemy, Celery, Poetry</p>
+                        </div>
+                        <div class="slide__content_media">
+                            <img src="code/static/media/bot/bot_speed.mp4" alt="Bot gif" id="bot-gif">
+                        </div>
+                        <div class="slide__content_buttons">
+                            <button class="slide-button"><a href="https://github.com/SemenovaLiza/link_cutter" target="_blank">GitHub</a></button>
+                            <button class="slide-button openModal" data-modal="bot-modal">Description</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="slide__content">
+                        <h1>Experience</h1>
+                        <p>1.4 years at Yandex Company</p>
+                        <p id="project-desc">
+                            <ul>
+                            <li>Developed and deployed a Telegram bot used by over 500,000 users, handling more than 20,000 daily messages with a response time under 200 ms in Dockerized environment, using Docker, asynchronous Python and Aiogram. </li>
+                            <li>   Implemented a responsive UI with Aiogram and handled all database operations via SQLAlchemy, including creating and querying user data, admin roles, and conversation logs.</li>
+                                <li>  Built background task queues and admin tools using Celery.</li>
+                                    <li>  Reduced API request handling time by 35% by migrating a scalable RESTful API from Django Rest Framework (DRF) to Flask.</li>
+                                        <li>  Contributed to Dockerized deployment and helped to set up a CI/CD pipeline that reduced deployment time by 30%.</li>
+
+                                            <li>    Developed a Telegram bot using the python-telegram-bot library to monitor student work status across 3 major college systems, delivering real-time alerts to users and reducing the manual status checks by 100%.</li>
+                                                <li>   Achieved over 800 active users within 2 weeks of launching the chatbot.</li>
+                            </ul>
+                        </p>
+                        <button class="slide-button"><a href="https://github.com/SemenovaLiza/networking_bot" target="_blank"><span>G</span>it<span></span>H</span>ub</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="ss-modal">
+                <div class="modal-inner" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                    <h2>Microservices-Based Streaming Platform</h2>
+                    <p>
+                        A scalable, modular platform designed to simulate the core architecture of modern streaming services (e.g., Netflix, YouTube).
+                        Asynchronous API — Handles client requests efficiently with non-blocking communication for smooth user experience.
+                        Recommendation System — Provides personalized movie suggestions using a dedicated Recommendation Service API and core recommendation logic.
+                        ETL Pipelines — Extract, transform, and load movie and user interaction data; index results in Elasticsearch for fast search and use Redis for caching.
+                        Relational Databases — PostgreSQL stores structured data across services: movies, user-generated content, and recommendation metadata.
+                        Containerized Architecture — Each service runs in an isolated container via Docker Compose, enabling independent scaling, easier debugging, and clear modularity.
+                    </p>
+                    <img src="code/static/media/silver_screen/SS_Architecture.png" alt="SS ARchitecture photo">
+                    <img src="code/static/media/silver_screen/RS_Predictor_API.jpg" alt="RS_Predictor_API photo">
+                    <img src="code/static/media/silver_screen/RS_API.jpg" alt="RS_API photo">
+                    <button class="closeModal">Close</button>
+                </div>
+            </div>
+            <div class="modal" id="foodio-modal">
+                <div class="modal-inner" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                    <h2>Web Recipe Assistant</h2>
+                    <p>
+                        A web app for sharing and discovering recipes. Users can publish dishes, save favorites, follow authors, and generate shopping lists.<br>
+                        Tech Highlights:<br>
+                        1. REST API with role-based access<br>
+                        2. Automated CI/CD: linting (PEP8 via flake8), Docker image build & push, remote deployment, and Telegram notifications<br>
+                        3. Backend & frontend fully containerized with Docker<br>
+                    </p>
+                    <h3>User's page</h3>
+                    <img src="code/static/media/foodio/user page .png" alt="Bot gif" id="bot-gif">
+                    <h3>Subscriptions page</h3>
+                    <img src="code/static/media/foodio/subscriptions.png" alt="Bot gif" id="bot-gif">
+                    <h3>Shopping list page</h3>
+                    <img src="code/static/media/foodio/buylist.png" alt="Bot gif" id="bot-gif">
+                    <button class="closeModal">Close</button>
+                </div>
+            </div>
+            <div class="modal" id="lc-modal">
+                <div class="modal-inner" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                    <h2>Link Shortener Service</h2>
+                    <p>
+                        Link Shortener Service
+                        A web service for mapping long URLs to short, user-friendly ones — either custom-defined or auto-generated.<br>
+                        <p>
+                            Key Features:<br>
+                            1. Generate short links linked to original URLs<br>
+                            2. Redirect users to the original address via short links<br>
+                            3. Full REST API support
+                        </p>
+                    </p>
+                    <img src="code/static/media/link_cutter/yacut1.png" alt="Bot gif" id="bot-gif">
+                    <img src="code/static/media/link_cutter/yacut2.png" alt="Bot gif" id="bot-gif">
+                    <button class="closeModal">Close</button>
+                </div>
+            </div>
+            <div class="modal" id="bot-modal">
+                <div class="modal-inner" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                    <h2>Telegram Bot for Design Students (Collaborative project)</h2>
+                    <p>
+                        <strong>Microservices-based system</strong> for student collaboration and feedback management, deployed in a fully containerized environment.
+                        </p>
+
+                        <p>
+                        <strong>Features & Highlights:</strong><br>
+                        1. Telegram Bot for student interactions (pair matching, feedback, complaints).<br>
+                        2. PostgreSQL + Adminer for relational data management.<br>
+                        3. Celery + Redis for task scheduling and queue processing (e.g., meeting reminders, feedback collection).<br>
+                        4. Ngrok for webhook support.<br>
+                        Monitoring & Observability: Promtail + Loki + Grafana for log aggregation and visualization.
+                        </p>
+
+                        <p>
+                        <strong>Data Model:</strong><br>
+                        1. Student profiles (status, specialization, rating, ban logic).<br>
+                        2. Matched pairs with meeting status tracking.<br>
+                        3. Feedback & complaint management with admin review.<br>
+                        4. Dynamic rating system balancing first impressions and cumulative feedback.
+                        </p>
+
+                        <p>
+                        <strong>Impact:</strong><br>
+                        Automated student pairing and evaluation process.<br>
+                        Improved community engagement.<br>
+                        Provided scalable monitoring with Grafana dashboards.
+                        </p>
+
+                    <h3>Data Base schema</h3>
+                    <img src="code/static/media/bot/db_schema.png" alt="Bot gif" id="bot-gif">
+                    <button class="closeModal">Close</button>
+                </div>
+            </div>
+            <div class="swapper-bottom">
+                <div class="slider-pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="slider-navigation">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <video src="code/static/media/background.mp4" class="video-background" muted></video>
+    <main>
+</body>
+</html>
